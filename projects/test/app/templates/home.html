@@ -4,8 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar,
+        .navbar-start {
+            display: flex;
+        }
+        .navbar {
+            border-bottom: 1px solid grey;
+            background: lightyellow;
+            padding: 10px;
+            height: 7vh;
+            display: flex;
+            align-items: center;
+        }
+        .navbar-logo {
+            font-weight: bold;
+            font-size: 25px;
+            cursor: pointer;
+        }
+    </style>
 </head>
+
 <body>
-    <h1> Main page</h1>
+    <div class="navbar">
+        <div class="navbar-start">
+            <div class="navbar-logo">Магазин</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="items">
+            <div class="item">
+                <div class="item-image">
+                    <img src="https://static.insales-cdn.com" alt="">
+                </div>  
+                <div class="item-price">1000 рублей</div>
+                <div class="item-remains">Осталось 10 шт</div>
+                <div class="item-title">Клавиатура мембранная</div>
+                <div class="item-rating">5 звезд</div>
+                <div class="item-comments">2 отзыва</div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
